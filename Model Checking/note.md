@@ -90,10 +90,10 @@ In other words, CTL can be viewed as a propositional modal logic based on the co
 #### 1.2.4 The Temporal Logic LTL  
 
 LTL (Linear-time Temporal Logic) is the syntactic fragment of CTL ${ }^{\star}$ that contains no path quantifiers except a leading $\mathbf{A}$ :
-- If $p \in A$, then $p$ is an $\mathrm{LTL}^{-}$formula.
-- If $\varphi$ and $\psi$ are LTL $^{-}$ formulas, then $\varphi \vee \psi, \varphi \wedge \psi, \neg \varphi, \mathbf{X} \varphi, \mathbf{F} \varphi, \mathbf{G} \psi$ , and $\psi \mathbf{U} \varphi$ are $\mathrm{LTL}^{-}$formulas.
-- If $\psi$ is an LTL$^{-}$ formula, then $\mathbf{A} \psi$ is an LTL formula.
-LTL is also called the linear-time fragment of the branching-time logic $\mathrm{CTL}^{\star}$. This is because the LTL $^{-}$formulas are interpreted over paths, i.e., over linear sequences of states.
+- If $p \in A$, then $p$ is an $\mathrm{LTL}^{-}$ formula.
+- If $\varphi$ and $\psi$ are $\mathrm{LTL}^{-}$ formulas, then $\varphi \vee \psi, \varphi \wedge \psi, \neg \varphi, \mathbf{X} \varphi, \mathbf{F} \varphi, \mathbf{G} \psi$ , and $\psi \mathbf{U} \varphi$ are $\mathrm{LTL}^{-}$ formulas.
+- If $\psi$ is an $\mathrm{LTL}^{-}$ formula, then $\mathbf{A} \psi$ is an LTL formula.
+LTL is also called the linear-time fragment of the branching-time logic $\mathrm{CTL}^{\star}$. This is because the $\mathrm{LTL}^{-}$ formulas are interpreted over paths, i.e., over linear sequences of states.
 - **Theorem 2**: *There is an LTL model-checking algorithm whose running time depends linearly on the size of the Kripke structure and exponentially on the length of the LTL formula.*  
 
 ### 1.3 A Very Brief Guide Through the Chapters of the Handbook  
