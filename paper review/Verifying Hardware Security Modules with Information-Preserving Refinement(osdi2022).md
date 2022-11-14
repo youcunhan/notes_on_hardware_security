@@ -38,5 +38,5 @@ driver的作用和驱动程序有点像，他是spec的一部分，也需要开�
 
 ![image-20221110193617608](assets/image-20221110193617608.png)
 
-![image-20221110193621200](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221110193621200.png)
+![image-20221110193621200](assets/image-20221110193621200.png)
 
