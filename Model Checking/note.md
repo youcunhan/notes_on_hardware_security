@@ -47,7 +47,7 @@ Conventional state machines
 Path quantifiers:
 
 * $\mathbf A$ "for every infinite path from this state"
-* $\mathbf E $ "there exists an infinite path from this state"
+* $\mathbf E$ "there exists an infinite path from this state"
 
 Temporal operators (for atomic propositions p and q):
 
@@ -69,7 +69,7 @@ $-$ If $\varphi$ and $\psi$ are formulas of $\mathrm{CTL}^{\star}$, then $\varph
 Given a Kripke structure $K$, state $s$, and state formula $f$ , a model-checking algorithm is a decision procedure for $K,s \models f$ .  
 
 * Semantics of $\mathrm{CTL}^{\star}$. Here, $K$ is a Kripke structure, $\pi$ is a path, $s$ is a state, $p$ is an atomic
-  proposition, $f$ and $g$ are state formulas, and $\varphi$ and $\psi$ are  $\mathrm{CTL}^{\star}$formulas  
+  proposition, $f$ and $g$ are state formulas, and $\varphi$ and $\psi$ are  $\mathrm{CTL}^{\star}$ formulas  
 
 ![image-20221107155409851](note.assets/image-20221107155409851.png)
 
@@ -79,7 +79,7 @@ CTL (Computation Tree Logic) is the syntactic fragment of  $\mathrm{CTL}^{\star}
 
 * If $p \in A$, then $p$ is a CTL formula.
 
-* If $\varphi$ and $\psi$ are CTL formulas, then $\varphi \vee \psi, \varphi \wedge \psi, \neg \varphi, \mathbf{A X} \varphi, \mathbf{E X} \varphi, \mathbf{A F} \varphi, \mathbf{E F} \varphi$, $\mathbf{A G} \psi, \mathbf{E G} \psi, \mathbf{A} \psi \mathbf{U} \varphi$, and $\mathbf{E} \psi \mathbf{U} \varphi$ are CTL formulas.
+* If $\varphi$ and $\psi$ are CTL formulas, then $\varphi \vee \psi, \varphi \wedge \psi, \neg \varphi, \mathbf{A X} \varphi, \mathbf{E X} \varphi, \mathbf{A F} \varphi, \mathbf{E F} \varphi$ , $\mathbf{A G} \psi, \mathbf{E G} \psi, \mathbf{A} \psi \mathbf{U} \varphi$, and $\mathbf{E} \psi \mathbf{U} \varphi$ are CTL formulas.
 
 In other words, CTL can be viewed as a propositional modal logic based on the compound operators $\mathbf{A X}, \mathbf{E X}, \mathbf{A F}, \mathbf{E F}, \mathbf{A G}, \mathbf{E G}, \mathbf{A}$, and $\mathbf{E U}$;
 
@@ -91,8 +91,8 @@ In other words, CTL can be viewed as a propositional modal logic based on the co
 
 LTL (Linear-time Temporal Logic) is the syntactic fragment of CTL ${ }^{\star}$ that contains no path quantifiers except a leading $\mathbf{A}$ :
 - If $p \in A$, then $p$ is an $\mathrm{LTL}^{-}$formula.
-- If $\varphi$ and $\psi$ are LTL $^{-}$formulas, then $\varphi \vee \psi, \varphi \wedge \psi, \neg \varphi, \mathbf{X} \varphi, \mathbf{F} \varphi, \mathbf{G} \psi$, and $\psi \mathbf{U} \varphi$ are $\mathrm{LTL}^{-}$formulas.
-- If $\psi$ is an LTL $^{-}$formula, then $\mathbf{A} \psi$ is an LTL formula.
+- If $\varphi$ and $\psi$ are LTL $^{-}$ formulas, then $\varphi \vee \psi, \varphi \wedge \psi, \neg \varphi, \mathbf{X} \varphi, \mathbf{F} \varphi, \mathbf{G} \psi$ , and $\psi \mathbf{U} \varphi$ are $\mathrm{LTL}^{-}$formulas.
+- If $\psi$ is an LTL$^{-}$ formula, then $\mathbf{A} \psi$ is an LTL formula.
 LTL is also called the linear-time fragment of the branching-time logic $\mathrm{CTL}^{\star}$. This is because the LTL $^{-}$formulas are interpreted over paths, i.e., over linear sequences of states.
 - **Theorem 2**: *There is an LTL model-checking algorithm whose running time depends linearly on the size of the Kripke structure and exponentially on the length of the LTL formula.*  
 
