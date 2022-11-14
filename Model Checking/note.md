@@ -20,7 +20,7 @@
 
   * 
 
-  ![image-20221107151959089](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107151959089.png)
+  ![image-20221107151959089](note.assets/image-20221107151959089.png)
 
 * The algorithmic challenge: combinatorial explosion of states in the Kripke structure—the "state-explosion problem." 
 
@@ -40,7 +40,7 @@ Conventional state machines
   * That is, $I(S)$ is a set of interpretations specifying which propositions are true in each state
 * $R\subseteq S\times S$ is a transition relation
 
-![image-20221107153646865](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107153646865.png)
+![image-20221107153646865](note.assets/image-20221107153646865.png)
 
 #### 1.2.2 The Temporal Logic $\mathrm{CTL}^{\star}$
 
@@ -52,13 +52,13 @@ Path quantifiers:
 Temporal operators (for atomic propositions p and q):
 
 * $\mathbf Xp$ "p holds at the next state"
-  * ![image-20221107154838376](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107154838376.png)
+  * ![image-20221107154838376](note.assets/image-20221107154838376.png)
 * $\mathbf Fp$ "p holds at some state in the future"
-  * ![image-20221107154908405](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107154908405.png)
+  * ![image-20221107154908405](note.assets/image-20221107154908405.png)
 * $\mathbf Gp$ "q holds at all states in the future"
-  * ![image-20221107154934285](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107154934285.png)
+  * ![image-20221107154934285](note.assets/image-20221107154934285.png)
 * $q\mathbf Up$ "p holds at some state in the future, and q holds at all states until p holds"
-  * ![image-20221107154957318](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107154957318.png)
+  * ![image-20221107154957318](note.assets/image-20221107154957318.png)
 
 For instance, $\mathbf{F} p$ holds on path $\pi$ iff $\pi$ contains a state with label $p$, and $\mathbf{A} \varphi$ holds at state $s$ iff $\varphi$ holds on all infinite paths that start from state $s$.
 
@@ -71,7 +71,7 @@ Given a Kripke structure $K$, state $s$, and state formula $f$ , a model-checkin
 * Semantics of $\mathrm{CTL}^{\star}$. Here, $K$ is a Kripke structure, $\pi$ is a path, $s$ is a state, $p$ is an atomic
   proposition, $f$ and $g$ are state formulas, and $\varphi$ and $\psi$ are  $\mathrm{CTL}^{\star}$formulas  
 
-![image-20221107155409851](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107155409851.png)
+![image-20221107155409851](note.assets/image-20221107155409851.png)
 
 #### 1.2.3 The Temporal Logic CTL
 
@@ -83,7 +83,7 @@ CTL (Computation Tree Logic) is the syntactic fragment of  $\mathrm{CTL}^{\star}
 
 In other words, CTL can be viewed as a propositional modal logic based on the compound operators $\mathbf{A X}, \mathbf{E X}, \mathbf{A F}, \mathbf{E F}, \mathbf{A G}, \mathbf{E G}, \mathbf{A}$, and $\mathbf{E U}$;
 
-![image-20221107174101523](C:\Users\尤存翰\AppData\Roaming\Typora\typora-user-images\image-20221107174101523.png)
+![image-20221107174101523](note.assets/image-20221107174101523.png)
 
 * **Theorem 1**: *There is a CTL model-checking algorithm whose running time depends linearly on the size of the Kripke structure and on the length of the CTL formula (if the other parameter is fixed).*  
 
