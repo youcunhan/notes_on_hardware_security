@@ -39,7 +39,6 @@ In *Proceedings of the 8th International Workshop on Hardware and Architectural 
 * SMT Code Generator (4)
   * 用于将FIRRTL解析为FIRRTL expr/stat树的工具，然后将其处理为SMT solver使用的SMT语句，具体流程如下。
   * (Phase 1) Parse the FIRRTL file, 然后增加一个叫 $L_{taggedVariable}$ 的structure用来存储变量和tag信息。
-  * (Phase 2) Create tags for all variables: apart from variables explicitly tagged by the designer in SecChisel, variables with no tags are tagged with U nde f inedTaд, and all data is stored in new Lde f aul t structure.
   * (Phase 2) 为所有变量创建tags：除了设计者在SecChisel中明确标记的变量外，没有标记的变量用$Undefined$标记，所有数据都存储在新的$L_{default}$结构中。
   * (Phase 3) 处理$L_{default}$ 中那些undefined的tags 把他们存在 $L_{redefined}$ structure中.
   * (Phase 4) 输出SMT code, $F_{SMT}$ , 里面存有security lattice, tag-range functions和tag information在$L_{redefined}$中。
